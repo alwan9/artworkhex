@@ -48,18 +48,20 @@ header {
 /*navbar*/
 .navbar {
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.356);
-    height: 70px;
+    height: 60px;
+    z-index: 100;
     text-align: end;
     position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 100;
-
+    background: rgba(255, 255, 255, 0.19);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.8px);
+    -webkit-backdrop-filter: blur(4.8px);
 }
 .navLogo {
-    width: 80px;
+    width: 70px;
     margin: 10px;
 }
 .navItem {
@@ -74,7 +76,7 @@ header {
 a {
     color: white;
     font-family: Arial, Helvetica, sans-serif; 
-    font-size: 1.5vmax;
+    font-size: 1.2vmax;
     text-decoration: none; 
 }
 a:hover {
@@ -109,12 +111,29 @@ a:hover {
 /*konten1*/
 .konten1 {
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     background-color: rgb(22, 22, 22);
 }
-.Rlogo {
+.rLogo{
 width: 100%;
+display: flex;
+justify-content: center;
 }
+.Rlogo {
+width: 40%;
+}
+
+@media screen and (max-width: 720px) {
+    .konten1{
+        width: 100vw;
+        height: 70vh;
+    }
+    .Rlogo {
+            width: 20%;
+        }
+}
+
+
 
 /* live subscribe */
 .konten2{
@@ -141,9 +160,14 @@ width: 100%;
     font-size: 2.3rem;
 }
 @media screen and (max-width: 720px) {
+    .konten2{
+        width: 100vw;
+        height: 70vh;
+    }
     .sub{
         font-size: 1rem;
     }
+
 }
 
 /* konten3 */
@@ -151,6 +175,12 @@ width: 100%;
     width: 100vw;
     height: 100vh;
     background-color: rgb(22, 22, 22);
+}
+@media screen and (max-width: 720px) {
+    .konten3{
+        width: 100vw;
+        height: 70vh;
+    }
 }
 
 /* konten3 sliders */
@@ -208,7 +238,12 @@ width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
 }
-
+@media screen and (max-width: 720px) {
+    .konten4{
+        width: 100vw;
+        height: 80vh;
+    }   
+}
 
 /* footer */
 .footer{
