@@ -127,7 +127,7 @@ a:hover {
 @media screen and (max-width: 720px) {
     .konten1{
         width: 100vw;
-        height: 65vh;
+        height: 55vh;
     }
    .crt {
        font-size: 0.9rem;
@@ -168,7 +168,7 @@ a:hover {
 @media screen and (max-width: 720px) {
     .konten2{
         width: 100vw;
-        height: 70vh;
+        height: 60vh;
     }
     .sub{
         font-size: 1rem;
@@ -185,7 +185,7 @@ a:hover {
 @media screen and (max-width: 720px) {
     .konten3{
         width: 100vw;
-        height: 60vh;
+        height: 50vh;
     }
 }
 
